@@ -1,0 +1,22 @@
+.Card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+/* .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+.container .card:nth-child(3) .box .content a {
+  background: #97dc47;
+} */
