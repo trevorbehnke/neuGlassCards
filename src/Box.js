@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Tilt from "react-tilt";
 import "./css/Box.css";
 import Content from "./Content";
 
@@ -9,9 +10,9 @@ class Box extends Component {
   }
   render() {
     return (
-      <div className="Box">
-        <Content />
-      </div>
+      <Tilt className="Box Tilt">
+        <Content className="Tilt-inner" />
+      </Tilt>
     );
   }
 }
