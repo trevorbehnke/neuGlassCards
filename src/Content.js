@@ -1,24 +1,16 @@
 import React, { Component } from "react";
 import "./css/Content.css";
 
-class Content extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = {  }
-  }
-  render() {
-    return (
-      <div className="Content">
-        <h2>01</h2>
-        <h3>Card One</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minima
-          quidem. Minus, eum temporibus! Id at et velit odit dolor.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    );
-  }
+function Content(props) {
+  return (
+    <div className="Content">
+      <h1>{props.id}</h1>
+      <h2>{props.name}</h2>
+      <h3>{props.username}</h3>
+      <h4>{props.email}</h4>
+      <h5>{props.website}</h5>
+    </div>
+  );
 }
 
 export default Content;
