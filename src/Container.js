@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Card from "./Card.js";
 import "./css/Container.css";
 
@@ -8,9 +8,11 @@ function Container(props) {
       <Card
         id={props.id}
         name={props.name}
-        username={props.username}
+        job={props.job}
+        phone={props.phone}
         email={props.email}
-        website={props.website}
+        country={props.country}
+        avatar={props.avatar}
       />
     </div>
   );

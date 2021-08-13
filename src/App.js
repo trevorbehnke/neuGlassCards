@@ -1,38 +1,40 @@
-import React, { Component } from "react";
-import Card from "./Card.js";
+import React from "react";
+import faker from "faker";
 import Container from "./Container.js";
 import "./css/App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [],
-    };
-  }
-
-  componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => this.setState({ users: data }));
-  }
-
-  render() {
-    const { users } = this.state;
-    return (
-      <div className="App">
-        {users.map((user) => (
-          <Container
-            id={user.id}
-            name={user.name}
-            username={user.username}
-            email={user.email}
-            website={user.website}
-          />
-        ))}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Container
+        id={faker.random.number()}
+        name={faker.name.firstName()}
+        job={faker.name.jobTitle()}
+        phone={faker.phone.phoneNumber()}
+        email={faker.internet.email()}
+        country={faker.address.country()}
+        avatar={faker.image.avatar()}
+      />
+      <Container
+        id={faker.random.number()}
+        name={faker.name.firstName()}
+        job={faker.name.jobTitle()}
+        phone={faker.phone.phoneNumber()}
+        email={faker.internet.email()}
+        country={faker.address.country()}
+        avatar={faker.image.avatar()}
+      />
+      <Container
+        id={faker.random.number()}
+        name={faker.name.firstName()}
+        job={faker.name.jobTitle()}
+        phone={faker.phone.phoneNumber()}
+        email={faker.internet.email()}
+        country={faker.address.country()}
+        avatar={faker.image.avatar()}
+      />
+    </div>
+  );
 }
 
 export default App;

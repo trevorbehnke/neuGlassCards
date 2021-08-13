@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Tilt from "react-tilt";
 import "./css/Box.css";
 import Content from "./Content";
@@ -10,9 +10,11 @@ function Box(props) {
         className="Tilt-inner"
         id={props.id}
         name={props.name}
-        username={props.username}
+        job={props.job}
+        phone={props.phone}
         email={props.email}
-        website={props.website}
+        country={props.country}
+        avatar={props.avatar}
       />
     </Tilt>
   );
